@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KikaiCraft — Tienda</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="store.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER / NAVEGACIÓN
+     ============================================================ -->
+<header class="header" role="banner">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a href="home.html" class="logo" aria-label="KikaiCraft inicio">
+      <div class="logo-icon">K</div>
+      <span class="logo-text">KIKAICRAFT</span>
+    </a>
+
+    <!-- Navegación -->
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="home.html">Inicio</a>
+      <a href="store.html" class="activo">Tienda</a>
+      <a href="wiki.html">Wiki</a>
+    </nav>
+
+    <!-- Controles -->
+    <div class="header-controles">
+<button class="btn-ip">
+    COPIAR IP
+  </button>
+
+      <a href="https://discord.gg/kikaicraft" target="_blank" class="btn-discord">
+         <svg width="20" height="16" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
+          <path d="M20.3 4.4A19 19 0 0 0 16 3c-.2.3-.4.7-.5 1a17.5 17.5 0 0 0-7 0A11.4 11.4 0 0 0 8 3a19 19 0 0 0-4.3 1.4A20.2 20.2 0 0 0 .2 18.4a19.2 19.2 0 0 0 5.8 2.9 14.4 14.4 0 0 0 1.3-2.1 12.6 12.6 0 0 1-2-.9l.5-.4a13.7 13.7 0 0 0 11.7 0l.5.4a12.6 12.6 0 0 1-2 1 14 14 0 0 0 1.3 2.1 19.1 19.1 0 0 0 5.8-2.9 20.2 20.2 0 0 0-3.8-14zM8 15.5c-1.4 0-2.5-1.3-2.5-2.8S6.6 10 8 10s2.5 1.2 2.5 2.7-1.1 2.8-2.5 2.8zm8 0c-1.4 0-2.5-1.3-2.5-2.8S14.6 10 16 10s2.5 1.2 2.5 2.7-1.1 2.8-2.5 2.8z"/>
+        </svg>
+        Discord
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" aria-label="Bienvenida a la tienda">
+  <div class="hero-fondo" aria-hidden="true"></div>
+  <div class="hero-linea" aria-hidden="true">
+    <span>&#9670;</span> Temporada 4: El Shogunato de Hierro <span>&#9670;</span>
+  </div>
+
+  <div class="hero-contenido">
+    <h1>
+      Mejora tu
+      <span>Aventura</span>
+    </h1>
+    <p class="hero-sub">
+      Equípate con el mejor equipo del reino. Desde skins de katana antigua hasta maquinaria
+      steampunk avanzada, tu leyenda comienza aquí.
+    </p>
+    <div class="hero-botones">
+      <a href="#productos" class="btn-primario">Explorar Tienda</a>
+      <button class="btn-secundario btn-ip">Ver Servidor</button>
+    </div>
+  </div>
+
+  <!-- Estadísticas del servidor -->
+  <div class="hero-stats" aria-label="Estadísticas del servidor">
+    <div class="stat-item">
+      <div class="stat-num">10+</div>
+      <div class="stat-label">Ciudadanos Activos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Disponibilidad</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">200+</div>
+      <div class="stat-label">Mods Optimizados</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORÍAS DE TIENDA
+     ============================================================ -->
+<section class="seccion categorias-bg" aria-labelledby="titulo-categorias">
+  <div class="seccion-inner">
+    <div class="seccion-header">
+      <h2 class="seccion-titulo" id="titulo-categorias">Categorías de Tienda</h2>
+      <p class="seccion-desc">Explora nuestra colección completa de contenido personalizado.</p>
+    </div>
+    <div class="categorias-grid">
+      <!-- Kits -->
+      <div class="cat-card" data-categoria="kits" role="button" tabindex="0" aria-label="Filtrar por Kits">
+        <div class="cat-icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e83030" stroke-width="2" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div class="cat-nombre">Kits</div>
+        <div class="cat-desc">Sets de inicio profesionales</div>
+      </div>
+      <!-- Partículas -->
+      <div class="cat-card" data-categoria="particulas" role="button" tabindex="0" aria-label="Filtrar por Partículas">
+        <div class="cat-icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="2" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="cat-nombre">Partículas</div>
+        <div class="cat-desc">Efectos de rastro visual y aura</div>
+      </div>
+      <!-- Cosméticos -->
+      <div class="cat-card" data-categoria="cosmeticos" role="button" tabindex="0" aria-label="Filtrar por Cosméticos">
+        <div class="cat-icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e83030" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <div class="cat-nombre">Cosméticos</div>
+        <div class="cat-desc">Sombreros, alas y skins personalizados</div>
+      </div>
+      <!-- Rangos -->
+      <div class="cat-card" data-categoria="rangos" role="button" tabindex="0" aria-label="Filtrar por Rangos">
+        <div class="cat-icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="2" aria-hidden="true">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+        <div class="cat-nombre">Rangos</div>
+        <div class="cat-desc">Ventajas exclusivas en todo el servidor</div>
+      </div>
+      <!-- Cajas -->
+      <div class="cat-card" data-categoria="cajas" role="button" tabindex="0" aria-label="Filtrar por Cajas">
+        <div class="cat-icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e83030" stroke-width="2" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+        </div>
+        <div class="cat-nombre">Cajas</div>
+        <div class="cat-desc">Botín aleatorio de alta rareza</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BÚSQUEDA Y FILTROS
+     ============================================================ -->
+<div class="busqueda-seccion">
+  <div class="busqueda-inner">
+    <div class="busqueda-wrapper">
+      <!-- Input de búsqueda -->
+      <div class="busqueda-input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="busqueda"
+          class="busqueda-input"
+          placeholder="Buscar productos..."
+          aria-label="Buscar productos en la tienda"
+        />
+      </div>
+      <!-- Filtros rápidos -->
+      <div class="filtros-pills" role="group" aria-label="Filtrar por categoría">
+        <button class="filtro-pill activo" data-filtro="todos">Todos</button>
+        <button class="filtro-pill" data-filtro="kits">Kits</button>
+        <button class="filtro-pill" data-filtro="cosmeticos">Cosméticos</button>
+        <button class="filtro-pill" data-filtro="particulas">Partículas</button>
+        <button class="filtro-pill" data-filtro="rangos">Rangos</button>
+        <button class="filtro-pill" data-filtro="cajas">Cajas</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PRODUCTOS
+     ============================================================ -->
+<section class="seccion productos-seccion" id="productos" aria-labelledby="titulo-productos">
+  <div class="seccion-inner">
+    <div class="productos-titulo">
+      <h2>Equípate para la <span>Grandeza</span></h2>
+      <p>Elige tu camino inicial y domina el reino. Cada artículo está diseñado para distintos estilos de juego.</p>
+    </div>
+
+    <!-- Grid de productos -->
+    <div class="productos-grid" id="productos-grid" aria-live="polite">
+
+      <!-- Kit Samurái -->
+<article class="producto-card" data-categoria="rangos" data-busqueda="rango samurai vip inicial beneficios">
+  <div class="producto-imagen-wrap" style="background: linear-gradient(135deg,#1a1a1a 0%,#2a2a2a 100%);">
+    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;">⚔️</div>
+    <span class="producto-badge">Inicial</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Rango</div>
+    <h3 class="producto-nombre">Rango Samurái</h3>
+    <p class="producto-desc">
+      Primer paso hacia la grandeza. Incluye prefijo exclusivo, acceso a
+      <strong>1 home extra</strong>, partículas básicas y el <strong>Kit Samurái</strong>.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$3.99 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Rango Samurái"
+        data-desc="Primer rango del servidor con beneficios básicos, partículas iniciales y acceso al Kit Samurái."
+        data-contenido="Armadura inicial, espada encantada, comida básica, kit samurái"
+        data-comandos="/kit samurai, /spawn, /sethome (1 extra)"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+      <!-- Kit Ingeniero -->
+<article class="producto-card" data-categoria="rangos" data-busqueda="rango ingeniero maquinas create tecnologia beneficios">
+  <div class="producto-imagen-wrap" style="background: linear-gradient(135deg,#0f1a1a 0%,#1f2d2d 100%);">
+    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;">⚙️</div>
+    <span class="producto-badge">Especialista</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Rango</div>
+    <h3 class="producto-nombre">Rango Ingeniero</h3>
+    <p class="producto-desc">
+      Domina la tecnología. Acceso a ventajas en automatización, más
+      <strong>homes</strong>, partículas avanzadas y el <strong>Kit Ingeniero</strong>.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$5.99 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar dorado-btn"
+        data-producto="Rango Ingeniero"
+        data-desc="Rango enfocado en tecnología y automatización con ventajas en mods y más homes."
+        data-contenido="Kit Ingeniero, herramientas tecnológicas, acceso a máquinas, mejoras de automatización"
+        data-comandos="/kit ingeniero, /crafting avanzado, /sethome (3 homes)"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+      <!-- Kit Explorador -->
+<article class="producto-card" data-categoria="kits" data-busqueda="kit explorador avanzado mapa estructuras aventura">
+  <div class="producto-imagen-wrap">
+    <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;">🧭</div>
+    <span class="producto-badge">Aventura</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Kit</div>
+    <h3 class="producto-nombre">Kit Explorador Pro</h3>
+    <p class="producto-desc">
+      Diseñado para descubrir dungeons y estructuras. Incluye brújulas especiales,
+      comida avanzada y equipo para largas expediciones.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$3.49 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Kit Explorador Pro"
+        data-desc="Kit ideal para explorar estructuras, dungeons y biomas peligrosos."
+        data-contenido="Brújula especial, comida avanzada, armadura ligera, herramientas de exploración"
+        data-comandos="/kit explorador, /spawn, /back"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+  <!-- cazador de bestias -->
+<article class="producto-card" data-categoria="kits" data-busqueda="kit cazador mobs jefes combate">
+  <div class="producto-imagen-wrap">
+    <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;">🏹</div>
+    <span class="producto-badge">Combate</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Kit</div>
+    <h3 class="producto-nombre">Kit Cazador de Bestias</h3>
+    <p class="producto-desc">
+      Ideal para enfrentar criaturas de alto nivel. Incluye arco mejorado,
+      armas especializadas y recursos para bosses.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$4.99 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Kit Cazador de Bestias"
+        data-desc="Kit diseñado para combatir mobs, bosses y criaturas peligrosas."
+        data-contenido="Arco mejorado, espada fuerte, flechas especiales, pociones de combate"
+        data-comandos="/kit cazador, /warp pvp, /spawn"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+  <!-- cazador de bestias -->
+
+<article class="producto-card" data-categoria="kits" data-busqueda="kit constructor build create herramientas">
+  <div class="producto-imagen-wrap">
+    <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;">🧱</div>
+    <span class="producto-badge">Build</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Kit</div>
+    <h3 class="producto-nombre">Kit Constructor</h3>
+    <p class="producto-desc">
+      Perfecto para builders. Incluye herramientas de construcción rápida,
+      bloques decorativos y utilidades tipo Construction Wand.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$2.99 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Kit Constructor"
+        data-desc="Kit perfecto para builders con herramientas rápidas y bloques decorativos."
+        data-contenido="Construction Wand, bloques decorativos, herramientas eficientes"
+        data-comandos="/kit constructor, /fly (zonas permitidas), /spawn"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+      
+      <!-- vampiro -->
+<article class="producto-card" data-categoria="rangos" data-busqueda="kit vampiro oscuridad sangre noche vampirism">
+  <div class="producto-imagen-wrap">
+    <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;">🩸</div>
+    <span class="producto-badge">Oscuridad</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Rango</div>
+    <h3 class="producto-nombre">Rango Vampiro</h3>
+    <p class="producto-desc">
+      Abraza la noche. Incluye armas con robo de vida, armadura ligera y buffs
+      nocturnos. Compatible con progresión de Vampirism.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$4.49 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Rango Vampiro"
+        data-desc="Rango oscuro con habilidades nocturnas, robo de vida y progresión vampírica."
+        data-contenido="Armadura ligera, espada con lifesteal, buffs nocturnos"
+        data-comandos="/kit vampiro, /nightvision, /feed"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+      <!-- Rango Shogun -->
+<article class="producto-card" data-categoria="rangos" data-busqueda="rango shogun maximo vip top beneficios">
+  <div class="producto-imagen-wrap" style="background: linear-gradient(135deg,#1a1200 0%,#2d1f00 100%);">
+    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;">👑</div>
+    <span class="producto-badge dorado">Máximo</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Rango</div>
+    <h3 class="producto-nombre">Rango Shogun</h3>
+    <p class="producto-desc">
+      El poder absoluto. Acceso total a perks, <strong>fly en zonas permitidas</strong>,
+      partículas legendarias, recompensas mensuales y el <strong>Kit Shogun</strong>.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$14.99 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar dorado-btn"
+        data-producto="Rango Shogun"
+        data-desc="El rango máximo del servidor con acceso total a perks y recompensas exclusivas."
+        data-contenido="Kit Shogun, fly, recompensas mensuales, partículas legendarias"
+        data-comandos="/kit shogun, /fly, /heal, /sethome (ilimitado)"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+<!-- rango daimyo -->
+<article class="producto-card" data-categoria="rangos" data-busqueda="rango daimyo vip beneficios clan economia">
+  <div class="producto-imagen-wrap" style="background: linear-gradient(135deg,#1a0f0f 0%,#2e1a1a 100%);">
+    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;">🏯</div>
+    <span class="producto-badge dorado">Premium+</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Rango</div>
+    <h3 class="producto-nombre">Rango Daimyo</h3>
+    <p class="producto-desc">
+      Lidera tu imperio. Incluye acceso a comandos exclusivos, más homes, mejoras en economía
+      y el <strong>Kit Daimyo</strong> con equipo avanzado y bonus semanales.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$9.99 <span>USD</span></div>
+      </div>
+      <button 
+          class="btn-comprar dorado-btn"
+          data-producto="Rango Daimyo"
+          data-desc="Rango premium con ventajas económicas, comandos exclusivos y mejoras de clan."
+          data-contenido="Kit Daimyo, bonus económicos, perks avanzados"
+          data-comandos="/kit daimyo, /pay, /sethome (5 homes)"
+      >   
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+<!-- kit alquimista -->
+
+<article class="producto-card" data-categoria="kits" data-busqueda="kit alquimista pociones buffs magia">
+  <div class="producto-imagen-wrap">
+    <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;">🧪</div>
+    <span class="producto-badge">Soporte</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Kit</div>
+    <h3 class="producto-nombre">Kit Alquimista</h3>
+    <p class="producto-desc">
+      Domina pociones y buffs. Incluye mejoras de AuraSkills, elixires avanzados
+      y recursos de Croptopia para combate estratégico.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$3.99 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Kit Alquimista"
+        data-desc="Kit enfocado en pociones, buffs y soporte en combate."
+        data-contenido="Pociones avanzadas, recursos Croptopia, mejoras AuraSkills"
+        data-comandos="/kit alquimista, /brew, /spawn"
+      >   
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+<!-- pack cosmetico -->
+
+<article class="producto-card" data-categoria="cosmeticos" data-busqueda="pack elitras alas cosmeticas volar skins elytra">
+  <div class="producto-imagen-wrap" style="background: linear-gradient(135deg,#0f172a 0%,#1e293b 100%);">
+    <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:5rem;">🕊️</div>
+    <span class="producto-badge">Pack Cosmético</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Cosmético</div>
+    <h3 class="producto-nombre">Pack Élitras</h3>
+    <p class="producto-desc">
+      Colección de <strong>élitras cosméticas</strong> con diseños únicos: samurái, oscuro y tecnológico.
+      Cambia la apariencia de tus alas sin afectar el gameplay. Compatible con UltraCosmetics.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$4.49 <span>USD</span></div>
+      </div>
+      <button 
+        class="btn-comprar"
+        data-producto="Pack Élitras"
+        data-desc="Pack cosmético de élitras con diferentes estilos visuales."
+        data-contenido="Élitras samurái, oscuras y tecnológicas (solo cosmético)"
+        data-comandos="/cosmetics, /elytra"
+      >   
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+<!-- caja misteriosa -->
+
+<article class="producto-card" data-categoria="cajas" data-busqueda="caja premium loot legendario rango items">
+  <div class="producto-imagen-wrap">
+    <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;">🎁</div>
+    <span class="producto-badge dorado">Premium</span>
+  </div>
+  <div class="producto-info">
+    <div class="producto-cat-tag">Caja</div>
+    <h3 class="producto-nombre">Caja Misteriosa Premium</h3>
+    <p class="producto-desc">
+      Mayor probabilidad de recompensas épicas. Puede contener rangos, kits avanzados,
+      cosméticos exclusivos o monedas del servidor.
+    </p>
+    <div class="producto-footer">
+      <div class="producto-precio-wrap">
+        <div class="producto-precio-label">Precio</div>
+        <div class="producto-precio">$2.49 <span>USD</span></div>
+      </div>
+      <button 
+          class="btn-comprar"
+          data-producto="Caja Misteriosa"
+          data-desc="Caja con recompensas aleatorias que pueden incluir kits, cosméticos o rangos."
+          data-contenido="Items aleatorios, posibilidad de rangos, recompensas raras"
+          data-comandos="/abrir caja, /warp crates"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</article>
+
+    </div>    
+
+    <!-- Mensaje sin resultados -->
+    <div class="sin-resultados" id="sin-resultados" role="status" aria-live="polite">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <p>No se encontraron productos con esos criterios.</p>
+    </div>
+  </div>
+  
+
+</section>
+
+
+<!-- ============================================================
+     COSMÉTICOS Y EFECTOS VISUALES
+     ============================================================ -->
+<section class="seccion extras-seccion" aria-labelledby="titulo-extras">
+  <div class="seccion-inner">
+    <div class="extras-grid">
+
+      <!-- Cosméticos populares -->
+      <div class="extras-col">
+        <div class="extras-col-titulo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+          Cosméticos Populares
+        </div>
+        <p class="extras-col-desc">Destaca entre la multitud con accesorios únicos.</p>
+        <div class="cosmeticos-lista">
+          <!-- Steam Goggles -->
+          <div class="cosmetico-card" role="button" tabindex="0" aria-label="Ver Steam Goggles">
+            <img
+              class="cosmetico-img"
+              src="https://images.pexels.com/photos/23991210/pexels-photo-23991210.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              alt="Steam Goggles"
+              loading="lazy"
+            />
+            <div class="cosmetico-info">
+              <div class="cosmetico-nombre">Steam Goggles</div>
+              <div class="cosmetico-tipo">Objeto de Cabeza</div>
+            </div>
+            <span class="cosmetico-flecha" aria-hidden="true">&#8250;</span>
+          </div>
+          <!-- Brazo Prostético -->
+          <div class="cosmetico-card" role="button" tabindex="0" aria-label="Ver Brazo Prostético">
+            <img
+              class="cosmetico-img"
+              src="https://images.pexels.com/photos/9534338/pexels-photo-9534338.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              alt="Brazo Prostético"
+              loading="lazy"
+            />
+            <div class="cosmetico-info">
+              <div class="cosmetico-nombre">Brazo Prostético</div>
+              <div class="cosmetico-tipo">Objeto de Cuerpo</div>
+            </div>
+            <span class="cosmetico-flecha" aria-hidden="true">&#8250;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Efectos visuales -->
+      <div class="extras-col">
+        <div class="extras-col-titulo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          Efectos Visuales
+        </div>
+        <p class="extras-col-desc">Rastros de partículas premium que te siguen a cada paso.</p>
+        <div class="particulas-grid">
+          <div class="particula-card" role="button" tabindex="0" aria-label="Partícula Infierno">
+            <div class="particula-icono" style="background:rgba(255,119,0,0.15);">🔥</div>
+            <div class="particula-nombre">Infierno</div>
+            <div class="particula-rareza rareza-legendario">Legendario</div>
+          </div>
+          <div class="particula-card" role="button" tabindex="0" aria-label="Partícula Zefiro">
+            <div class="particula-icono" style="background:rgba(77,166,255,0.15);">💨</div>
+            <div class="particula-nombre">Zéfiro</div>
+            <div class="particula-rareza rareza-raro">Raro</div>
+          </div>
+          <div class="particula-card" role="button" tabindex="0" aria-label="Partícula Polvo de Estrellas">
+            <div class="particula-icono" style="background:rgba(168,85,247,0.15);">✨</div>
+            <div class="particula-nombre">Polvo Estelar</div>
+            <div class="particula-rareza rareza-epico">Épico</div>
+          </div>
+          <div class="particula-card" role="button" tabindex="0" aria-label="Partícula Estática">
+            <div class="particula-icono" style="background:rgba(154,154,154,0.15);">⚡</div>
+            <div class="particula-nombre">Estática</div>
+            <div class="particula-rareza rareza-comun">Común</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BANNER CTA
+     ============================================================ -->
+<section class="seccion cta-seccion" aria-labelledby="titulo-cta">
+  <div class="seccion-inner">
+    <div class="cta-banner">
+      <div class="cta-izquierda">
+        <div class="cta-icono" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <div class="cta-texto">
+          <h3 id="titulo-cta">¿Quieres Más Personalización?</h3>
+          <p>Visita nuestra tienda web completa para rangos, llaves de caja y mejoras permanentes.</p>
+        </div>
+      </div>
+      <a href="https://store.kikaicraft.net" target="_blank" rel="noopener noreferrer" class="btn-cta">
+        Abrir Tienda Completa
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Columna 1 — Marca -->
+      <div class="footer-marca">
+        <a href="store.html" class="logo" aria-label="KikaiCraft inicio">
+          <div class="logo-icon">K</div>
+          <span class="logo-text">KIKAICRAFT</span>
+        </a>
+        <p>
+          La fusión definitiva de supervivencia tradicional y mods mecánicos avanzados.
+          Únete a nuestra comunidad de constructores y guerreros en un mundo donde el
+          samurái se encuentra con la máquina.
+        </p>
+        <div class="footer-social" role="list">
+          <a href="https://twitter.com/kikaicraft" target="_blank" rel="noopener noreferrer" aria-label="Twitter de KikaiCraft" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+            </svg>
+          </a>
+          <a href="https://discord.gg/kikaicraft" target="_blank" rel="noopener noreferrer" aria-label="Discord de KikaiCraft" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.3 4.4A19 19 0 0 0 16 3c-.2.3-.4.7-.5 1a17.5 17.5 0 0 0-7 0A11.4 11.4 0 0 0 8 3a19 19 0 0 0-4.3 1.4A20.2 20.2 0 0 0 .2 18.4a19.2 19.2 0 0 0 5.8 2.9 14.4 14.4 0 0 0 1.3-2.1 12.6 12.6 0 0 1-2-.9l.5-.4a13.7 13.7 0 0 0 11.7 0l.5.4a12.6 12.6 0 0 1-2 1 14 14 0 0 0 1.3 2.1 19.1 19.1 0 0 0 5.8-2.9 20.2 20.2 0 0 0-3.8-14z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Foro de KikaiCraft" role="listitem">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 2 — Links rápidos -->
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#">Reglas del Servidor</a></li>
+          <li><a href="#">Sitios de Votación</a></li>
+          <li><a href="#">Tickets de Soporte</a></li>
+          <li><a href="#">Postulación de Staff</a></li>
+          <li><a href="https://discord.gg/kikaicraft" target="_blank" rel="noopener noreferrer">Discord Oficial</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 — Políticas de tienda -->
+      <div class="footer-col">
+        <h4>Política de Tienda</h4>
+        <ul>
+          <li><a href="#">Términos de Servicio</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Reembolso</a></li>
+          <li><a href="#">Info de Envío</a></li>
+          <li><a href="#">Centro de Ayuda</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4 — Info del servidor -->
+      <div class="footer-col">
+        <h4>Info del Servidor</h4>
+        <div class="server-info-box">
+          <div class="server-row">
+            <span>Estado</span>
+            <span class="status-online">En línea</span>
+          </div>
+          <div class="server-row">
+            <span>IP del Servidor</span>
+          </div>
+          <div class="server-ip-display">KikaiCraft.clanky.net</div>
+          <button class="btn-copiar-ip" aria-label="Copiar IP del servidor">Copiar IP</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 KikaiCraft Networks. Todos los derechos reservados. <span>No es un producto oficial de Minecraft.</span></p>
+      <p>Diseñado para <span>la comunidad</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MODAL DE COMPRA
+     ============================================================ -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo-text">
+
+   
+  <div class="modal-caja">
+
+    <div class="modal-x" id="modal-x">×</div>
+
+    <h2 class="modal-titulo">Compra de producto</h2>
+
+    <p class="modal-producto" id="modal-producto"></p>
+
+    <p class="modal-mensaje" id="modal-desc"></p>
+
+    <div class="modal-seccion">
+     <h4>Contenido del kit</h4>
+      <p id="modal-contenido"></p>
+    </div>
+
+    <div class="modal-seccion">
+      <h4>Comandos incluidos</h4>
+      <p id="modal-comandos"></p>
+    </div>
+
+    <div class="modal-aviso">
+      ⚠️ Después de realizar el pago, se abrirá un ticket automáticamente en Discord  
+      para que el staff te entregue tu rango o kit.
+    </div>
+
+    <button class="modal-cerrar" id="modal-cerrar">
+      Entendido
+    </button >
+  </div>
+</div>
+
+<!-- ============================================================
+     TOAST — notificación copiar IP
+     ============================================================ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Scripts -->
+<script src="store.js"></script>
+</body>
+</html>

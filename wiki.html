@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki - KikaiCraft</title>
+  <meta name="description" content="Wiki oficial de KikaiCraft: guías de mods, jefes, economía, ítems y comandos del servidor." />
+<link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="wiki.css" />
+</head>
+<body>
+  <!-- ============================================================
+       BANNER TEMPORADA
+       ============================================================ -->
+        <!-- ============================================================
+  <div class="banner-temporada" role="banner" aria-label="Temporada activa">
+    <span class="banner-temporada__etiqueta">
+      <span class="banner-temporada__punto" aria-hidden="true"></span>
+      Temporada 4: El Shogunato de Hierro — En Vivo
+    </span>
+  </div>
+  ============================================================ -->
+
+</body>
+<!-- ============================================================
+     HEADER / NAVEGACIÓN
+     ============================================================ -->
+<header class="header" role="banner">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a href="home.html" class="logo" aria-label="KikaiCraft inicio">
+      <div class="logo-icon">K</div>
+      <span class="logo-text">KIKAICRAFT</span>
+    </a>
+
+    <!-- Navegación -->
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="home.html">Inicio</a>
+      <a href="store.html" >Tienda</a>
+      <a href="wiki.html" class="activo">Wiki</a>
+    </nav>
+
+    <!-- Controles -->
+    <div class="header-controles">
+<button class="btn-ip btn-copiar-ip copiar-ip">
+        COPIAR IP
+      </button>
+
+      <a href="https://discord.gg/kikaicraft" target="_blank" class="btn-discord">
+         <svg width="20" height="16" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
+          <path d="M20.3 4.4A19 19 0 0 0 16 3c-.2.3-.4.7-.5 1a17.5 17.5 0 0 0-7 0A11.4 11.4 0 0 0 8 3a19 19 0 0 0-4.3 1.4A20.2 20.2 0 0 0 .2 18.4a19.2 19.2 0 0 0 5.8 2.9 14.4 14.4 0 0 0 1.3-2.1 12.6 12.6 0 0 1-2-.9l.5-.4a13.7 13.7 0 0 0 11.7 0l.5.4a12.6 12.6 0 0 1-2 1 14 14 0 0 0 1.3 2.1 19.1 19.1 0 0 0 5.8-2.9 20.2 20.2 0 0 0-3.8-14zM8 15.5c-1.4 0-2.5-1.3-2.5-2.8S6.6 10 8 10s2.5 1.2 2.5 2.7-1.1 2.8-2.5 2.8zm8 0c-1.4 0-2.5-1.3-2.5-2.8S14.6 10 16 10s2.5 1.2 2.5 2.7-1.1 2.8-2.5 2.8z"/>
+        </svg>
+        Discord
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button
+        class="encabezado__hamburguesa"
+        id="btnHamburguesa"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menuMovil"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- Menú móvil -->
+    <nav class="menu-movil" id="menuMovil" aria-label="Menú móvil">
+      <a href="#" class="menu-movil__enlace">Store</a>
+      <a href="wiki.html" class="menu-movil__enlace menu-movil__enlace--activo">Wiki</a>
+      <a href="#" class="menu-movil__enlace">Map</a>
+      <a href="#" class="menu-movil__enlace">Rules</a>
+      <button class="btn-ip copiar-ip" style="margin-top:8px;width:100%;justify-content:center;" aria-label="Copiar IP del servidor">
+        play.kikaicraft.net
+      </button>
+      <a href="https://discord.gg/kikaicraft" class="btn-discord" style="margin-top:8px;justify-content:center;" target="_blank" rel="noopener noreferrer">
+        Unirse al Discord
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECCIÓN HÉROE
+         ============================================================ -->
+    <section class="hero" aria-label="Bienvenida a la Wiki">
+      <h1 class="hero__titulo">
+        KikaiCraft <em class="hero__titulo-wiki">WIKI</em>
+      </h1>
+      <p class="hero__subtitulo">
+        Aprende
+        <span aria-hidden="true">•</span>
+        Explora
+        <span aria-hidden="true">•</span>
+        Domina el Servidor
+      </p>
+      <a href="#categorias" class="hero__boton-explorar">
+        Ver Todos los Artículos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         BARRA DE BÚSQUEDA
+         ============================================================ -->
+    <section class="seccion-busqueda" aria-label="Búsqueda de artículos">
+      <div class="busqueda__contenedor">
+        <svg class="busqueda__icono" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="inputBusqueda"
+          class="busqueda__input"
+          placeholder="Buscar artículos, ítems, jefes, comandos..."
+          autocomplete="off"
+          aria-label="Buscar en la wiki"
+        />
+        <div class="busqueda__atajo" aria-hidden="true">
+          <kbd>PRESIONA</kbd>
+          <kbd>/</kbd>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN CATEGORÍAS
+         ============================================================ -->
+    <section class="seccion-categorias" id="categorias" aria-label="Categorías de artículos">
+      <div class="seccion-categorias__encabezado">
+        <h2 class="seccion-categorias__titulo">Categorías</h2>
+        <p class="seccion-categorias__descripcion">Explora el contenido por tema para dominar tu camino.</p>
+      </div>
+
+      <div class="categorias__cuadricula" role="list">
+
+        <div class="tarjeta-categoria" data-categoria="mods" role="listitem" tabindex="0" aria-label="Filtrar por Guía de Mods">
+          <span class="tarjeta-categoria__icono" aria-hidden="true">⚙️</span>
+          <h3 class="tarjeta-categoria__titulo">Guía de Mods</h3>
+          <p class="tarjeta-categoria__descripcion">Aprende sobre la maquinaria KikaiTech y la automatización.</p>
+          <span class="tarjeta-categoria__contador"></span>
+        </div>
+
+        <div class="tarjeta-categoria" data-categoria="jefes" role="listitem" tabindex="0" aria-label="Filtrar por Jefes">
+          <span class="tarjeta-categoria__icono" aria-hidden="true">💀</span>
+          <h3 class="tarjeta-categoria__titulo">Jefes</h3>
+          <p class="tarjeta-categoria__descripcion">Estrategias para los Shoguns y encuentros en los Dragones.</p>
+          <span class="tarjeta-categoria__contador"></span>
+        </div>
+
+        <div class="tarjeta-categoria" data-categoria="items" role="listitem" tabindex="0" aria-label="Filtrar por Ítems y Equipo">
+          <span class="tarjeta-categoria__icono" aria-hidden="true">🛡️</span>
+          <h3 class="tarjeta-categoria__titulo">Ítems y Equipo</h3>
+          <p class="tarjeta-categoria__descripcion">Recetas de Crafteo para tus habilidades de explorador.</p>
+          <span class="tarjeta-categoria__contador"></span>
+        </div>
+
+        <div class="tarjeta-categoria" data-categoria="economia" role="listitem" tabindex="0" aria-label="Filtrar por Economía">
+          <span class="tarjeta-categoria__icono" aria-hidden="true">💰</span>
+          <h3 class="tarjeta-categoria__titulo">Economía</h3>
+          <p class="tarjeta-categoria__descripcion">Sistemas de trueque, tiendas de jugadores y minería de oro.</p>
+          <span class="tarjeta-categoria__contador"></span>
+        </div>
+
+        <div class="tarjeta-categoria" data-categoria="comandos" role="listitem" tabindex="0" aria-label="Filtrar por Comandos">
+          <span class="tarjeta-categoria__icono" aria-hidden="true">💻</span>
+          <h3 class="tarjeta-categoria__titulo">Comandos</h3>
+          <p class="tarjeta-categoria__descripcion">Referencia rápida para herramientas de jugador y admin.</p>
+          <span class="tarjeta-categoria__contador"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LAYOUT PRINCIPAL: ARTÍCULOS + BARRA LATERAL
+         ============================================================ -->
+    <div class="layout-principal">
+
+      <!-- ── Columna de artículos ── -->
+      <section aria-label="Lista de artículos">
+
+        <!-- Pestañas de filtro -->
+        <div class="filtros-pestanas" role="tablist" aria-label="Filtrar artículos por categoría">
+          <button class="pestana pestana--activa" data-categoria="todos" role="tab" aria-selected="true">
+            Todos los Artículos
+          </button>
+          <button class="pestana" data-categoria="mods" role="tab" aria-selected="false">
+            Guía de Mods
+          </button>
+          <button class="pestana" data-categoria="jefes" role="tab" aria-selected="false">
+            Jefes
+          </button>
+          <button class="pestana" data-categoria="items" role="tab" aria-selected="false">
+            Ítems y Equipo
+          </button>
+          <button class="pestana" data-categoria="economia" role="tab" aria-selected="false">
+            Economía
+          </button>
+          <button class="pestana" data-categoria="comandos" role="tab" aria-selected="false">
+            Comandos
+          </button>
+        </div>
+
+        <!-- Los artículos se renderizan aquí vía JavaScript -->
+        <div id="contenedorArticulos" class="lista-articulos" aria-live="polite" aria-atomic="false" role="feed">
+          <!-- Artículos generados dinámicamente -->
+        </div>
+
+      </section>
+
+      <!-- ── Barra lateral ── -->
+      <aside class="lateral" aria-label="Información del servidor y accesos rápidos">
+
+        <!-- Widget: Servidor Online -->
+        <div class="widget" role="region" aria-label="Estado del servidor">
+          <h3 class="widget__titulo">Servidor Online</h3>
+
+          <div class="widget-servidor__estado">
+            <span class="widget-servidor__punto-verde" aria-hidden="true"></span>
+            <span class="widget-servidor__nombre">KikaiCraft</span>
+            <span class="widget-servidor__jugadores" aria-label="1240 jugadores en línea">1,240 Jugadores</span>
+          </div>
+
+          <div class="widget-servidor__ip">
+            <span class="widget-servidor__ip-texto" aria-label="Dirección IP: play.kikaicraft.net">KikaiCraft.clanky.net</span>
+            <button class="widget-servidor__copiar copiar-ip" title="Copiar IP" aria-label="Copiar IP al portapapeles">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Widget: Artículos Populares -->
+        <div class="widget" role="region" aria-label="Artículos populares">
+          <h3 class="widget__titulo">Artículos Populares</h3>
+          <ol class="lista-populares">
+            <li class="articulo-popular">
+              <span class="articulo-popular__numero" aria-hidden="true">1</span>
+              <span class="articulo-popular__titulo">Dominando la Lógica de Vapor</span>
+            </li>
+            <li class="articulo-popular">
+              <span class="articulo-popular__numero" aria-hidden="true">2</span>
+              <span class="articulo-popular__titulo">Tablas de Botín del Jefe v4.2</span>
+            </li>
+            <li class="articulo-popular">
+              <span class="articulo-popular__numero" aria-hidden="true">3</span>
+              <span class="articulo-popular__titulo">La Gran Guía del Rush de Oro</span>
+            </li>
+            <li class="articulo-popular">
+              <span class="articulo-popular__numero" aria-hidden="true">4</span>
+              <span class="articulo-popular__titulo">Cómo Craftear una Katana Prime</span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Widget: Etiquetas Tácticas -->
+        <div class="widget" role="region" aria-label="Etiquetas tácticas">
+          <h3 class="widget__titulo">Etiquetas Tácticas</h3>
+          <div class="etiquetas-tactiles" role="list">
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Vapor</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Combate</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Defensa</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Economía</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Crafting</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Básico</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Raid</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Jefes</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Automatización</span>
+            <span class="etiqueta-tactica" role="listitem" tabindex="0">#Transporte</span>
+          </div>
+        </div>
+
+        <!-- Widget: Soporte -->
+        <div class="widget widget-soporte" role="region" aria-label="Soporte">
+          <div class="widget-soporte__icono" aria-hidden="true">🎫</div>
+          <h3 class="widget-soporte__titulo">¿Necesitas Ayuda?</h3>
+          <p class="widget-soporte__descripcion">
+            No encuentras lo que buscas. Pide ayuda a nuestro staff en Discord o abre un ticket de soporte.
+          </p>
+          <a href="https://discord.gg/kikaicraft" class="widget-soporte__boton" target="_blank" rel="noopener noreferrer">
+            Abrir Ticket
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- ============================================================
+         BANNER TIENDA
+         ============================================================ -->
+    <section class="banner-tienda" aria-label="Promoción de la tienda">
+      <div class="banner-tienda__contenedor">
+        <div class="banner-tienda__icono" aria-hidden="true">🛒</div>
+        <div class="banner-tienda__texto">
+          <h2 class="banner-tienda__titulo">¿Necesitas más personalización?</h2>
+          <p class="banner-tienda__descripcion">
+            Visita nuestra tienda para rangos, claves de crates y mejoras cosméticas.
+          </p>
+        </div>
+        <a href="store.html" class="banner-tienda__boton" target="_blank" rel="noopener noreferrer">
+          Abrir Tienda
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="pie-pagina" role="contentinfo">
+    <div class="pie-pagina__cuadricula">
+
+      <!-- Columna marca -->
+      <div class="pie-pagina__marca">
+        <div class="pie-pagina__logo">
+          <div class="pie-pagina__logo-icono" aria-hidden="true">K</div>
+          <span class="pie-pagina__logo-texto">Kikai<span>Craft</span></span>
+        </div>
+        <p class="pie-pagina__descripcion">
+          La fusión definitiva del survival tradicional y la mecánica avanzada.
+          Únete a nuestra comunidad de constructores y guerreros hoy.
+        </p>
+        <div class="pie-pagina__redes" aria-label="Redes sociales">
+          <a href="#" class="pie-pagina__red" aria-label="Discord" title="Discord">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 00-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 00-5.487 0 12.36 12.36 0 00-.617-1.23A.077.077 0 008.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 00-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 00.031.055 20.03 20.03 0 005.993 2.98.078.078 0 00.084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 01-1.872-.878.075.075 0 01-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 01.078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 01.079.009c.12.098.245.195.372.288a.075.075 0 01-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 00-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 00.084.028 19.963 19.963 0 006.002-2.981.076.076 0 00.032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 00-.031-.028z"/></svg>
+          </a>
+          <a href="#" class="pie-pagina__red" aria-label="Twitter / X" title="Twitter">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="pie-pagina__red" aria-label="YouTube" title="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna: enlaces rápidos -->
+      <nav aria-label="Enlaces rápidos del footer">
+        <h4 class="pie-pagina__columna-titulo">Enlaces Rápidos</h4>
+        <ul class="pie-pagina__columna-lista">
+          <li><a href="#">Reglas del Servidor</a></li>
+          <li><a href="#">Sitios de Votación</a></li>
+          <li><a href="#">Tickets de Soporte</a></li>
+          <li><a href="#">Solicitud de Staff</a></li>
+        </ul>
+      </nav>
+
+      <!-- Columna: política de la tienda -->
+      <nav aria-label="Política de la tienda">
+        <h4 class="pie-pagina__columna-titulo">Política de la Tienda</h4>
+        <ul class="pie-pagina__columna-lista">
+          <li><a href="#">Términos de Servicio</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Reembolso</a></li>
+          <li><a href="#">Centro de Ayuda</a></li>
+        </ul>
+      </nav>
+
+      <!-- Columna: servidor IP -->
+      <div role="region" aria-label="IP del servidor">
+        <h4 class="pie-pagina__columna-titulo">Servidor IP</h4>
+
+        <div class="footer-servidor__estado">
+          <span class="footer-servidor__punto-verde" aria-hidden="true"></span>
+          <span class="footer-servidor__nombre">KikaiCraft.clanky.net</span>
+          <span class="footer-servidor__etiqueta">ONLINE</span>
+        </div>
+
+        <div class="footer-servidor__ip">
+          <span class="footer-servidor__ip-texto">KikaiCraft.clanky.net</span>
+          <button class="footer-servidor__copiar copiar-ip" title="Copiar IP" aria-label="Copiar IP al portapapeles">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Barra inferior del footer -->
+    <div class="pie-pagina__inferior">
+      <p class="pie-pagina__copyright">
+        &copy; 2026 KikaiCraft Networks. Todos los derechos reservados. No es un producto oficial de Minecraft.
+      </p>
+      <p class="pie-pagina__creditos">
+        Diseñado para <span>LA COMUNIDAD</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Notificación al copiar IP -->
+  <div
+    class="notificacion-copiado"
+    id="notificacionCopiado"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    ✓ ¡IP copiada al portapapeles!
+  </div>
+
+  <!-- Script principal -->
+  <script src="wiki.js"></script>
+</body>
+</html>

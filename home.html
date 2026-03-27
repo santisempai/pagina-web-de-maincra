@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KikaiCraft — Tienda</title>
+<link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+<!-- ============================================================
+     HEADER / NAVEGACIÓN
+     ============================================================ -->
+<header class="header" role="banner">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a href="home.html" class="logo" aria-label="KikaiCraft inicio">
+      <div class="logo-icon">K</div>
+      <span class="logo-text">KIKAICRAFT</span>
+    </a>
+
+    <!-- Navegación -->
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="home.html"  class="activo">Inicio</a>
+      <a href="store.html">Tienda</a>
+      <a href="wiki.html">Wiki</a>
+    </nav>
+
+    <!-- Controles -->
+    <div class="header-controles">
+      <button class="btn-ip btn-copiar-ip">
+        COPIAR IP
+      </button>
+
+      <a href="https://discord.gg/kikaicraft" target="_blank" class="btn-discord">
+         <svg width="20" height="16" viewBox="0 0 26 20" fill="currentColor" aria-hidden="true">
+          <path d="M20.3 4.4A19 19 0 0 0 16 3c-.2.3-.4.7-.5 1a17.5 17.5 0 0 0-7 0A11.4 11.4 0 0 0 8 3a19 19 0 0 0-4.3 1.4A20.2 20.2 0 0 0 .2 18.4a19.2 19.2 0 0 0 5.8 2.9 14.4 14.4 0 0 0 1.3-2.1 12.6 12.6 0 0 1-2-.9l.5-.4a13.7 13.7 0 0 0 11.7 0l.5.4a12.6 12.6 0 0 1-2 1 14 14 0 0 0 1.3 2.1 19.1 19.1 0 0 0 5.8-2.9 20.2 20.2 0 0 0-3.8-14zM8 15.5c-1.4 0-2.5-1.3-2.5-2.8S6.6 10 8 10s2.5 1.2 2.5 2.7-1.1 2.8-2.5 2.8zm8 0c-1.4 0-2.5-1.3-2.5-2.8S14.6 10 16 10s2.5 1.2 2.5 2.7-1.1 2.8-2.5 2.8z"/>
+        </svg>
+        Discord
+      </a>
+    </div>
+
+  </div>
+</header>
+
+      <!-- ===== SCROLL CONTENT ===== -->
+      <div class="scroll-content" data-codia-role="scroll_content">
+        <div data-codia-role="shared_rail">
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="main-content">
+
+          <!-- Fondo decorativo -->
+          <img class="bg-overlay"
+            src="https://static.codia.ai/s/image_2b48c024-8692-4421-a732-63bf8203f662.png"
+            alt="" aria-hidden="true" />
+
+          <div class="content-col">
+
+        
+            <!-- Hero Title -->
+            <section class="hero-title" aria-label="Lema del servidor">
+              <div class="hero-row">
+                <span class="hero-where">DONDE</span>
+                <span class="hero-samurai"> EL SAMURAI</span>
+              </div>
+              <div class="hero-row">
+                <span class="hero-meets">SE ENCUENTRA CON</span>
+                <span class="hero-machine">LA MAQUINA</span>
+              </div>
+              <p class="hero-subtitle">Survival &middot; Mods &middot; Adventure</p>
+            </section>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+              <button id="btn-journey" class="btn-start-journey" aria-label="Comenzar tu aventura">
+                <span>COMIENCE SU VIAJE</span>
+              </button>
+              <button id="btn-map" class="btn-view-map" aria-label="Ver mapa en vivo">
+                <span>Ver Mapa</span>
+              </button>
+            </div>
+
+            <!-- Estadisticas -->
+            <div class="stats-row" role="list" aria-label="Estadisticas del servidor">
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Personas activas</span>
+              </div>
+              <img class="stat-divider"
+                src="https://static.codia.ai/s/image_e3905156-a058-41b4-b06f-395cac01e38f.png"
+                alt="" aria-hidden="true" width="7" height="53" />
+              <div class="stat-item-center" role="listitem">
+                <span class="stat-number-sm">24/7</span>
+                <span class="stat-label">tiempo de actividad</span>
+              </div>
+              <img class="stat-divider"
+                src="https://static.codia.ai/s/image_b120ba9e-4506-400e-ac1c-7fbd3955c6d7.png"
+                alt="" aria-hidden="true" width="7" height="53" />
+              <div class="stat-item" role="listitem">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Mods optimizados</span>
+              </div>
+            </div>
+
+            <!-- The Future of Survival -->
+            <section class="future-section" aria-labelledby="future-heading">
+              <div class="future-inner">
+                <!-- Texto -->
+                <div class="future-text">
+                  <div class="future-heading">
+                    <h2 class="future-heading-main" id="future-heading">El Futuro de</h2>
+                    <span class="future-heading-accent">Survival</span>
+                  </div>
+                  <p class="future-description">
+                    KikaiCraft es un servidor survival modificado con contenido personalizado,
+                    jefes, tecnologia y una comunidad en crecimiento. Explora un mundo
+                    donde las artes marciales antiguas chocan con la innovacion a vapor.
+                    Construye fabricas masivas, forja armamento legendario, y crea
+                    tu propia historia en un sandbox en constante evolucion.
+                  </p>
+                  <div class="future-features">
+                    <div class="feature-card">
+                      <div class="feature-card-header">
+                        <img class="feature-card-icon"
+                          src="https://static.codia.ai/s/image_a32c38bb-e744-4b64-8980-60dd811fef75.png"
+                          alt="" width="22" height="22" />
+                        <span class="feature-card-title">Custom Mods</span>
+                      </div>
+                      <p class="feature-card-desc">Mods Optimizados</p>
+                    </div>
+                    <div class="feature-card">
+                      <div class="feature-card-header">
+                        <img class="feature-card-icon"
+                          src="https://static.codia.ai/s/image_d5c99cd7-5be8-4a54-a83a-4012f8b74abd.png"
+                          alt="" width="22" height="16" />
+                        <span class="feature-card-title">Events</span>
+                      </div>
+                      <p class="feature-card-desc">Eventos comunitarios semanales.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Imagen -->
+                <div class="future-image-wrap">
+                  <img class="future-img"
+                    src="https://static.codia.ai/s/image_29600f7a-e2d1-4bcc-9b2f-25a7c69e020b.png"
+                    alt="Pagoda samurai en niebla" width="567" height="319" />
+                  <div class="future-online-badge">
+                    <img src="https://static.codia.ai/s/image_895c62bb-6524-4b40-9c37-7e06f879b637.png"
+                      alt="" width="24" height="24" />
+                    <span class="future-online-badge-text">Join 152 Others Online</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- EQUIP FOR GREATNESS -->
+            <!-- ============================================================
+   EXPERIENCIA DEL SERVIDOR
+============================================================ -->
+<section class="experience-section" id="server-experience">
+
+  <div class="experience-heading">
+    <h2 class="experience-title">La Experiencia</h2>
+    <span class="experience-accent">KikaiCraft</span>
+  </div>
+
+  <img class="experience-divider"
+    src="https://static.codia.ai/s/image_22564fad-1978-4539-9489-77550cf60d6c.png"
+    alt="" aria-hidden="true" />
+
+  <p class="experience-subtitle">
+    Un mundo donde la ingeniería, el combate y la exploración se combinan
+    para crear algo más que un survival.
+  </p>
+
+  <!-- BLOQUES -->
+  <div class="experience-blocks">
+
+    <!-- TECNOLOGÍA -->
+    <div class="experience-row">
+      <div class="experience-text">
+        <h3>Ingeniería y automatización</h3>
+        <p>
+          Domina el poder del mod Create y construye fábricas, sistemas mecánicos
+          y procesos automatizados. Desde simples engranajes hasta industrias completas.
+        </p>
+      </div>
+      <img src="https://static.codia.ai/s/image_1991c653-7ca1-4a10-b638-eab2a7a53638.png"
+        alt="Tecnología Create" />
+    </div>
+
+    <!-- EXPLORACIÓN -->
+    <div class="experience-row reverse">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/071/854/689/small/silhouette-samurai-in-neon-lit-asian-town-photo.jpeg"
+        alt="Exploración mundo" />
+      <div class="experience-text">
+        <h3>Exploración sin límites</h3>
+        <p>
+          Descubre biomas únicos, estructuras ocultas y secretos en cada rincón.
+          Cada viaje puede cambiar tu progreso.
+        </p>
+      </div>
+    </div>
+
+    <!-- COMBATE -->
+    <div class="experience-row">
+      <div class="experience-text">
+        <h3>Combate y desafíos</h3>
+        <p>
+          Enfréntate a enemigos y jefes diseñados para poner a prueba tu habilidad.
+          Mejora tu equipo y evoluciona tu estilo de combate.
+        </p>
+      </div>
+      <img src="https://static.codia.ai/s/image_7e0f6e54-8e9e-4dc7-8678-faac9e57bcc7.png"
+        alt="Combate" />
+    </div>
+
+    <!-- ROLEPLAY -->
+    <div class="experience-row reverse">
+      <img src="https://static.codia.ai/s/image_29600f7a-e2d1-4bcc-9b2f-25a7c69e020b.png"
+        alt="Roleplay" />
+      <div class="experience-text">
+        <h3>Un mundo con historia</h3>
+        <p>
+          KikaiCraft evolucionará hacia un entorno de roleplay donde los jugadores
+          crearán clanes, eventos y su propia narrativa.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+   CTA FINAL (MISMO ESTILO)
+============================================================ -->
+<section class="home-cta-final">
+
+  <div class="home-cta-box">
+    <h2>Comienza tu historia</h2>
+    <p>
+      Únete a una comunidad en crecimiento y forma parte del futuro de KikaiCraft.
+    </p>
+
+    <div class="home-cta-buttons">
+      <a href="wiki.html" class="btn-start-journey">Ver Wiki</a>
+      <a href="store.html" class="btn-view-map">Tienda</a>
+    </div>
+  </div>
+
+</section>
+
+          </div><!-- /content-col -->
+        </main><!-- /main-content -->
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+          <div class="footer-top">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+              <a href="#" class="footer-logo">
+                <img src="https://static.codia.ai/s/image_351a37e8-2b0c-447e-aedc-ba23d0f67e5e.png"
+                  alt="KikaiCraft" width="28" height="28" />
+                <span class="footer-logo-text">KikaiCraft</span>
+              </a>
+              <p class="footer-brand-desc">
+                La fusion definitiva de supervivencia tradicional y mods mecanicos avanzados.
+                Unete a nuestra comunidad de constructores y guerreros hoy.
+              </p>
+              <div class="footer-socials">
+                <img src="https://static.codia.ai/s/image_1d0b7eff-7bb3-44c8-b767-3f9cde1d2f7b.png"
+                  alt="Twitter" width="16" height="14" />
+                <img src="https://static.codia.ai/s/image_c2a9f5a4-0470-464b-b1af-a919c4a69d75.png"
+                  alt="Facebook" width="11" height="20" />
+                <img src="https://static.codia.ai/s/image_ddd9c301-3ae4-48e3-9b85-ffb76351e55a.png"
+                  alt="Discord" width="19" height="14" />
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <nav class="footer-col" aria-label="Quick Links">
+              <span class="footer-col-title">Quick Links</span>
+              <a href="#">Server Rules</a>
+              <a href="#">Voting Sites</a>
+              <a href="#">Support Tickets</a>
+              <a href="#">Staff Application</a>
+            </nav>
+
+            <!-- Store Policy -->
+            <nav class="footer-col" aria-label="Store Policy">
+              <span class="footer-col-title">Store Policy</span>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Refund Policy</a>
+              <a href="#">Help Center</a>
+            </nav>
+
+            <!-- Server Info -->
+            <div class="footer-col" aria-label="Server Info">
+              <span class="footer-col-title">Server Info</span>
+              <div class="server-info-box">
+                <div class="server-info-row">
+                  <span class="server-info-label">Status</span>
+                  <span class="server-info-value">Online</span>
+                </div>
+                <div class="server-ip-row">
+                  <span class="server-ip-label">IP</span>
+                  <span class="server-ip-value">play.kikaicraft.net</span>
+                </div>
+                <button class="btn-copy-ip" data-copy-ip aria-label="Copiar IP al portapapeles">
+                  <span>Copy to Clipboard</span>
+                </button>
+              </div>
+            </div>
+
+          </div><!-- /footer-top -->
+
+          <!-- Divider -->
+          <div class="footer-divider-line" role="separator"></div>
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <p class="footer-copyright">
+              &copy; 2026 KikaiCraft Networks. All rights reserved. Not an official Minecraft product.
+            </p>
+            <div class="footer-designed">
+              <span>Designed for</span>
+              <img src="https://static.codia.ai/s/image_43642bc1-dd13-4d71-92cc-ca2c7928627a.png"
+                alt="" width="11" height="10" />
+              <span>The Community</span>
+            </div>
+          </div>
+
+        </footer>
+
+      
+        </div>
+      </div><!-- /scroll-content -->
+    </div><!-- /app-shell -->
+
+    <!-- ===== MODAL COMPRA ===== -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-box">
+        <div class="modal-icon">&#9876;</div>
+        <h2 class="modal-title" id="modal-title">Proximamente</h2>
+        <p class="modal-desc" id="modal-kit-name-wrapper">
+          El sistema de compras para <strong id="modal-kit-name">este Kit</strong> estara disponible muy pronto.
+          Mantente atento a nuestro Discord para novedades.
+        </p>
+        <button class="modal-close" onclick="closeModal()">Entendido</button>
+      </div>
+    </div>
+
+    <!-- ===== TOAST NOTIFICACION ===== -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  
+
+<script src="home.js"></script>  
+</body>
+</html>
